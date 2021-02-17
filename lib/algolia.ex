@@ -410,7 +410,7 @@ defmodule Algolia do
 
   ## Examples
 
-      iex> Algolia.delete_by("index", filters: ["score < 30"])
+      iex> Algolia.delete_by("index", filters: "score < 30")
       {:ok, %{"indexName" => "index", "taskId" => 42, "deletedAt" => "2018-10-30T15:33:13.556Z"}}
   """
   def delete_by(index, opts) when is_list(opts) do
